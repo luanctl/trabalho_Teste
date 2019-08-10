@@ -31,7 +31,7 @@ public class UNIVATES_2019B {
            
    //Para Depositar para o Luan é só colocar o numero POSITIVO
    //Para Depositar para o Renan é só colocar o numero NEGATIVO
-     int valorTransferencia = 300;
+     int valorTransferencia = -300;
   
         System.out.println("Saldo incial " + "\n");      
        pessoa1.setNome("Luan");
