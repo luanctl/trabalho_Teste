@@ -79,9 +79,8 @@ public class Pessoa {
                 //"\nValor Atualizado = " + this.valorAtualizado + 
                 "\n===========================";
     }
-
+    
     boolean setCodigo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-
