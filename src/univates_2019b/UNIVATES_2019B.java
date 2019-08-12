@@ -44,11 +44,11 @@ public class UNIVATES_2019B {
     
    
    Scanner tecladoN = new Scanner(System.in);
-   System.out.println("Para qual você deseja tranferir ? :  [1] " + pessoa1.getNome() + " [2] " + pessoa2.getNome());
+   System.out.println("Para qual você deseja tranferir ? :" + "\n" + "[1] " + pessoa1.getNome() + "\n" + "[2] "  + pessoa2.getNome() + "\n" + "[3] " + "SAIR" );
    int nome  = tecladoN.nextInt();
-   
-   
    switch (nome) {
+       
+       
   case 1:
     System.out.println(pessoa1.getNome()+ " SELECIONADO");
      Scanner teclado = new Scanner(System.in);
@@ -57,8 +57,8 @@ public class UNIVATES_2019B {
         double valor = pessoa1.getValorConta();
           // transferencia(pessoa1.getNome(), pessoa2.getNome(), pessoa1.getValorConta(), valorTransferencia);
      
-       if(valorTransferencia > 500){
-                System.out.println("Valor não permitido");
+       if(valorTransferencia > 500 || valorTransferencia <=0){
+                System.out.println("VALOR NÃO PERMITIDO");
        }else {
         String nomeP = pessoa1.getNome();
         String nomeS = pessoa2.getNome();
@@ -77,8 +77,8 @@ public class UNIVATES_2019B {
         double valorTransferencia2 = teclado2.nextInt();
         double valor2 = pessoa2.getValorConta();
      
-       if(valorTransferencia2 > 500){
-                System.out.println("Valor não permitido");
+         if(valorTransferencia2 > 500 || valorTransferencia2 <=0){
+                System.out.println("VALOR NÃO PERMITIDO");
        }else {
         String nomeP = pessoa1.getNome();
         String nomeS = pessoa2.getNome();
@@ -89,8 +89,11 @@ public class UNIVATES_2019B {
                                                                "--------------------" + "\n" +
                                                              "Nome = " + nomeS + "\n" + "Valor = " + valorRenan);
         break;
-    
-     }
+         
+       }
+  case 3: 
+      System.out.println("OPERAÇÃO CANCELADA");
+     break;
     }
    } 
   }
